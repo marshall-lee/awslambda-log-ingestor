@@ -1,0 +1,17 @@
+{
+  "name": "awslambda-log-ingestor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack && chmod +x extensions/log-ingestor && rm -f log-ingestor.zip && zip log-ingestor.zip extensions/log-ingestor"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.789.0",
+    "fs-extra": "^9.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
